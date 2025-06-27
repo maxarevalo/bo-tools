@@ -1,0 +1,15 @@
+{
+  "name": "microfront-tool",
+  "scripts": {
+    "dev:backend": "node backend/index.js",
+    "dev:frontend": "npx serve public -l 8080",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
